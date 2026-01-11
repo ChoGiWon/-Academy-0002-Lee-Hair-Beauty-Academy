@@ -440,7 +440,7 @@
       font-size: 20px;
       font-weight: 500;
       color: #272525;
-      border-bottom: 2px solid #4e4949;
+      border-bottom: 1px solid #4e4949;
     }
 
     .login {
@@ -564,21 +564,122 @@
     /*                               ▽▽ [Container-1] [Section-1-1] ------------- */
     .section-1-1 {
       order: 0;
+      display: flex;
+      flex-direction: column;
       background-color: #fdfdfd;
-      margin: 0px;
+      margin: 0 auto;
       z-index: 1000;
       flex: 1;
     }
 
+    /*                               △△ [Container-1] [Section-1-1] ------------- */
+    /*                               ▽▽ [Container-1] [Section-1-2] ------------- */
     .mainContents {
+      order: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
       background-color: #f8f8f8;
-      margin: 10px 10px;
       z-index: 1000;
+      border-radius: 10px;
+      padding: 20px 20px;
+      margin: 5px auto;
+      border: 1px solid #b4aeae;
+    }
+
+    .intro-img-1 {
+      flex: 0 0 50%;
+      margin: 0px -50px 0px 50px;
+    }
+
+    .intro-img-1 img {
+      width: 50%;
+      height: auto;
+      border-radius: 15px;
+      display: block;
+    }
+
+    .txt-2_t-2 {
+      flex: 1;
+      font-family: "HY헤드라인M", sans-serif;
+    }
+
+    .txt-2_t-2 p {
+      margin-bottom: -15px;
+    }
+
+    .txt-2_t-2 p:last-child {
+      margin-bottom: 10px;
+    }
+
+    .txt-2_t-2_p-1 {
+      margin-top: 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: #302d2d;
+    }
+
+    .txt-2_t-2_p-2,
+    .txt-2_t-2_p-3 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-4 {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-5,
+    .txt-2_t-2_p-6,
+    .txt-2_t-2_p-7 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-8 {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-9,
+    .txt-2_t-2_p-10 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .subContents-1 {
+      order: -2;
+      background-color: #f8f8f8;
+      margin: 5px 0;
+      z-index: 1000;
+      padding: 10px 10px;
       border: 1px solid #b4aeae;
       border-radius: 10px;
     }
 
-    /*                               △△ [Container-1] [Section-1-1] ------------- */
+    .subContents-2 {
+      order: 0;
+      background-color: #f8f8f8;
+      margin: 5px 0;
+      z-index: 1000;
+      padding: 10px 10px;
+      border: 1px solid #b4aeae;
+      border-radius: 10px;
+    }
+
+    /*                               △△ [Container-1] [Section-1-2] ------------- */
     /*                               △△ [Container-1] --------------------------- */
 
     /*                               ▽▽ [Pop-Up] -------------------------------- */
@@ -1189,20 +1290,116 @@
       /*                      △△ [Media] [Container-1] [Section-1] --------------- */
       /*                      ▽▽ [Media] [Container-1] [Section-1-1] ------------- */
       .section-1-1 {
-        order: 0;
-        background-color: #fdfdfd;
-        margin: 0px;
-        z-index: 1000;
-        flex: 1;
-      }
+      order: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #fdfdfd;
+      margin: 0 auto;
+      z-index: 1000;
+      flex: 1;
+    }
 
-      .mainContents {
-        background-color: #f8f8f8;
-        margin: 10px 10px;
-        z-index: 1000;
-        border: 1px solid #b4aeae;
-        border-radius: 10px;
-      }
+    /*                               △△ [Container-1] [Section-1-1] ------------- */
+    /*                               ▽▽ [Container-1] [Section-1-2] ------------- */
+    .mainContents {
+      order: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      background-color: #f8f8f8;
+      z-index: 1000;
+      border-radius: 10px;
+      padding: 20px 0px;
+      margin: 5px auto;
+      border: 1px solid #b4aeae;
+    }
+
+    .intro-img-1 {
+      flex: 0 0 50%;
+      margin: 0px -60px 150px 10px;
+    }
+
+    .intro-img-1 img {
+      width: 50%;
+      height: auto;
+      border-radius: 15px;
+      display: block;
+    }
+
+    .txt-2_t-2 {
+      flex: 1;
+      font-family: "HY헤드라인M", sans-serif;
+    }
+
+    .txt-2_t-2 p {
+      margin-bottom: -15px;
+    }
+
+    .txt-2_t-2 p:last-child {
+      margin-bottom: 10px;
+    }
+
+    .txt-2_t-2_p-1 {
+      margin-top: 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: #302d2d;
+    }
+
+    .txt-2_t-2_p-2,
+    .txt-2_t-2_p-3 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-4 {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-5,
+    .txt-2_t-2_p-6,
+    .txt-2_t-2_p-7 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-8 {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #3f3c3c;
+    }
+
+    .txt-2_t-2_p-9,
+    .txt-2_t-2_p-10 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #3f3c3c;
+    }
+
+    .subContents-1 {
+      margin: 5px 0;
+      padding: 10px 10px;
+      border: 1px solid #b4aeae;
+      border-radius: 10px;
+    }
+
+    .subContents-2 {
+      margin: 5px 0;
+      padding: 10px 10px;
+      border: 1px solid #b4aeae;
+      border-radius: 10px;
+    }
+
 
       /*                      △△ [Media] [Container-1] [Section-1-1] ------------- */
       /*                      △△ [Media] [Container-1] --------------------------- */
@@ -1334,9 +1531,31 @@
           </header>
         </section>
 
+
         <section class="section-1-1">
           <div class="mainContents">
-            section-1-1
+            <div class="intro-img-1">
+              <img src="Image_006_Profile-1.png" alt="profile">
+            </div>
+            <div class="txt-2_t-2">
+              <p class="txt-2_t-2_p-1">-학력</p>
+              <p class="txt-2_t-2_p-2">공주대 영어교육 전공</p>
+              <p class="txt-2_t-2_p-3">한국교원대 영어교육 석사 졸업</p>
+              <p class="txt-2_t-2_p-4">-자격증</p>
+              <p class="txt-2_t-2_p-5">공주대 영어교육 박사 수료</p>
+              <p class="txt-2_t-2_p-6">공주대 상담심리 석사 수료</p>
+              <p class="txt-2_t-2_p-7">2025.11 헤어미용 국가자격증 취득</p>
+              <p class="txt-2_t-2_p-8">-경력</p>
+              <p class="txt-2_t-2_p-9">-국립학교 영어교사 20년</p>
+              <p class="txt-2_t-2_p-10">-영어학원 강사 10년</p>
+
+            </div>
+          </div>
+          <div class="subContents-1">
+            subContents-1
+          </div>
+          <div class="subContents-2">
+            subContents-2
           </div>
         </section>
       </div>
