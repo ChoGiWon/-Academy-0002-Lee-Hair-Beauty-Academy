@@ -893,7 +893,7 @@
       /*                       ▽▽ [Media] [Sub Container] [Section-2] ------------- */
       /*                       ▽▽ [Media] [Sub Container] [Section-2] Signboard --- */
       .section-2 {
-        padding-left: 0px;
+        padding-left: 2%;
       }
 
       .signboard-text img {
@@ -969,7 +969,9 @@
 
       .dropdown-menu li a {
         padding: 5px 0px;
-        font-size: 10px;
+        font-size: 17px;
+        border: 1px solid #e7e2e2;
+        word-break: keep-all;
       }
 
       /*                      △△ [Media] [Sub Container] [Main Nav] Dropdwon Menu -*/
@@ -1044,6 +1046,156 @@
 
       /*                  △△ [Media] [Main Container] [Section-5] ---------------- */
       /*                  △△ [Media] [Main Container] ---------------------------- */
+
+      /*                      ▽▽ [Media] [Container-1] --------------------------- */
+      /*                      ▽▽ [Media] [Container-1] [Section-1] --------------- */
+      .container-1 {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        width: auto;
+      }
+
+      .section-1 {
+        order: -1;
+        background-color: #ebe9e9;
+        margin: 0;
+        padding-bottom: 2px;
+        z-index: 1000;
+      }
+
+      .section-1 .up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .text1 {
+        margin-top: 2px;
+        margin-left: 10px;
+        font-family: "HY 견명조", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #272525;
+        border-bottom: 1px solid #4e4949;
+      }
+
+      .login {
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+        margin-top: 5px;
+        margin-right: 10px;
+        font-size: 0;
+      }
+
+      #guest-menu a {
+        text-decoration: none;
+        font-size: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      #guest-menu a:first-child {
+        border: 1px solid #c9f1c4;
+        color: #243f21;
+        background: #c9f1c4;
+        margin-right: 5px;
+      }
+
+      #guest-menu a:last-child {
+        background-color: #eecd91;
+        color: #243f21;
+        border: 1px solid #eecd91;
+      }
+
+      #guest-menu a:first-child:hover {
+        background-color: #8bdb81;
+      }
+
+      #guest-menu a:last-child:hover {
+        background-color: #e7b04a;
+      }
+
+      #member-menu {
+        font-size: 11px;
+        ;
+      }
+
+      #user-email {
+        margin-left: -5px;
+      }
+
+      #logout-btn {
+        margin-left: 0px;
+        text-decoration: underline;
+        color: #999;
+        font-weight: 900;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      #logout-btn:hover {
+        color: #333;
+      }
+
+      .section-1 .down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -11px;
+        margin-bottom: -10px;
+      }
+
+      .text2 {
+        width: 90%;
+        margin-top: 2px;
+        margin-left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .pagepath {
+        display: none;
+      }
+
+      .pagepath a {
+        border-bottom: 1px solid #333;
+      }
+
+      .pagepath .separator {
+        margin: 0 2px;
+        font-size: 10px;
+      }
+
+      .pagepath .current {
+        color: #106ba0;
+        font-weight: bold;
+        cursor: default;
+      }
+
+      /*                      △△ [Media] [Container-1] [Section-1] --------------- */
+      /*                      ▽▽ [Media] [Container-1] [Section-1-1] ------------- */
+      .section-1-1 {
+        order: 0;
+        background-color: #fdfdfd;
+        margin: 0px;
+        z-index: 1000;
+        flex: 1;
+      }
+
+      .mainContents {
+        background-color: #f8f8f8;
+        margin: 10px 10px;
+        z-index: 1000;
+        border: 1px solid #b4aeae;
+        border-radius: 10px;
+      }
+
+      /*                      △△ [Media] [Container-1] [Section-1-1] ------------- */
+      /*                      △△ [Media] [Container-1] --------------------------- */
 
       /*                               ▽▽ [Media] [Mobile] [Pop-Up] --------------- */
       /*                               ▽▽ [Media] [Mobile] [Pop-Up] Close Button -- */
@@ -1174,7 +1326,7 @@
 
         <section class="section-1-1">
           <div class="mainContents">
-            section-1-1
+            <div id="size-monitor">0px x 0px</div>
           </div>
         </section>
       </div>
@@ -1600,6 +1752,53 @@
     });
     //                                   △△ [Service] Location ---------------------------
 
+  </script>
+
+  <style>
+    #size-monitor {
+      position: fixed;
+      /* 화면에 고정 */
+      top: 400px;
+      /* 위에서 10px (바닥에 두려면 bottom: 10px) */
+      align-items: center;
+      /* 오른쪽에서 10px */
+      z-index: 9999;
+      /* 모든 요소보다 위에 */
+
+      background-color: rgba(0, 0, 0, 0.7);
+      /* 반투명 검은 배경 */
+      color: #00ff00;
+      /* 잘 보이는 형광 초록 글씨 */
+      padding: 8px 15px;
+      /* 안쪽 여백 */
+      border-radius: 5px;
+      /* 둥근 모서리 */
+
+      font-family: monospace;
+      /* 숫자 보기에 편한 폰트 */
+      font-size: 14px;
+      font-weight: bold;
+      pointer-events: none;
+      /* 이거 밑에 있는 버튼도 클릭 가능하게 설정 (중요!) */
+    }
+  </style>
+
+  <script>
+    (function () {
+      const monitor = document.getElementById('size-monitor');
+
+      // 사이즈 업데이트 함수
+      function updateSize() {
+        // 너비 x 높이 형식으로 표시
+        monitor.innerText = `W: ${window.innerWidth}px | H: ${window.innerHeight}px`;
+      }
+
+      // 1. 처음 로딩될 때 한 번 실행
+      updateSize();
+
+      // 2. 화면 크기가 변할 때마다(resize) 실행
+      window.addEventListener('resize', updateSize);
+    })();
   </script>
 
 </body>
