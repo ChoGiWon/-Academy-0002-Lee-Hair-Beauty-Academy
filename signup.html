@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입 - 헤어 아카데미</title>
+  <style>
+    /* 기존 스타일 유지 */
+    .signup-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* 유효성 검사 스타일 */
+    input.error {
+      border-color: #ff4d4d;
+      background-color: #fff0f0;
+    }
+
+    input.success {
+      border-color: #4caf50;
+      background-color: #f0fff0;
+    }
+
+    /* 메시지 영역 스타일 (중요!) */
+    .message {
+      font-size: 12px;
+      margin-top: 5px;
+      min-height: 18px;
+      /* 메시지가 없어도 레이아웃이 덜 흔들리게 높이 고정 */
+    }
+
+    .text-danger {
+      color: #ff4d4d;
+    }
+
+    .text-success {
+      color: #4caf50;
+    }
+
+    /* 테두리 색상 변화 */
+    input.error {
+      border-color: #ff4d4d;
+      background-color: #fff0f0;
+    }
+
+    input.success {
+      border-color: #4caf50;
+      background-color: #f0fff0;
+    }
+
+    .btn-signup {
+      width: 100%;
+      padding: 12px;
+      background-color: #e91e63;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .btn-signup:hover {
+      background-color: #c2185b;
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 13px;
+    }
+
+    .links a {
+      color: #666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>헤어 아카데미</h1>
+  </header>
+
+  <div class="signup-container">
+    <h2>회원가입</h2>
+
+    <form id="signup-form">
+      <div class="input-group">
+        <label for="username">이름</label>
+        <input type="text" id="username" placeholder="실명을 입력해주세요" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">이메일</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" placeholder="010-0000-0000" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="6자리 이상 입력" required>
+        <div id="pw-msg" class="message"></div>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">비밀번호 확인</label>
+        <input type="password" id="confirm-password" placeholder="비밀번호를 한 번 더 입력" required>
+        <div id="confirm-msg" class="message"></div>
+      </div>
+
+      <button type="submit" class="btn-signup">가입하기</button>
+    </form>
+
+    <div class="links">
+      이미 계정이 있으신가요? <a href="login.html"><strong>로그인 하러가기</strong></a>
+    </div>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module" src="signup.js"></script>
+
+
+</body>
+
+</html>
