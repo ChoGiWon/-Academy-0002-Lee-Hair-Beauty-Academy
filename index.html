@@ -88,7 +88,6 @@
       align-items: center;
       gap: 10px;
       margin: 0px;
-      /*padding-left: 25%;*/
       z-index: 1000;
       height: 50px;
     }
@@ -96,7 +95,6 @@
     .signboard {
       display: flex;
       justify-content: center;
-      /*width: 520px;*/
       width: auto;
       height: 50px;
       background-color: #fdfdfd;
@@ -147,23 +145,10 @@
 
     /*                               △△ [Sub Container] [Section-2] Signboard --- */
     /*                               ▽▽ [Sub Container] [Section-2] Phone ------- */
-    /*.phone-button-1 {
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      background-color: #fdfdfd;
-      border-radius: 30px;
-      padding: 1px 7px;
-      transition: all 0.3s;
-      text-decoration: none;
-    }*/
-
     .phone-button-1 {
       z-index: 1000;
       position: fixed;
-      top: 0;
+      top: 20;
       right: 0;
       display: flex;
       align-items: center;
@@ -910,7 +895,11 @@
       /*                       ▽▽ [Media] [Sub Container] [Section-2] ------------- */
       /*                       ▽▽ [Media] [Sub Container] [Section-2] Signboard --- */
       .section-2 {
-        padding-left: 2%;
+        /*justify-content: flex-start;*/
+      }
+
+      .signboard-text {
+        font-family: "HY 견명조", sans-serif;
       }
 
       .signboard-text img {
@@ -918,22 +907,22 @@
       }
 
       .signboard-text-1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -5px;
       }
 
       .signboard-text-2 {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -5px;
       }
 
       .signboard-text-3 {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -5px;
       }
 
       .signboard-text-4 {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -5px;
       }
 
@@ -1109,7 +1098,7 @@
 
       #guest-menu a {
         text-decoration: none;
-        font-size: 10px;
+        font-size: 15px;
         border-radius: 4px;
         font-weight: bold;
         transition: all 0.3s;
@@ -1270,7 +1259,7 @@
         width: 120px;
         height: 40px;
         line-height: 40px;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 900;
       }
 
@@ -1289,7 +1278,7 @@
       }
 
       .service-1-right-text {
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 900;
         padding: 10px 0px;
       }
@@ -1343,7 +1332,7 @@
 
         <section class="section-1-1">
           <div class="mainContents">
-            <div id="size-monitor">0px x 0px</div>
+            section-1-1
           </div>
         </section>
       </div>
@@ -1381,6 +1370,7 @@
           </p>
         </div>
       </div>
+
       <!--                            △△ [Main Container] [Section-20] Business Card -->
       <!--                            △△ [Main Container] [Section-20] ---------------->
     </footer>
@@ -1510,7 +1500,6 @@
     <!--                               △△ [Pop-Up] [Overlay-3] Location --------------->
     <!--                               △△ [Pop-Up] ------------------------------------>
   </div>
-
   <div class="service">
     <!--                               ▽▽ [Service] ------------------------------------->
     <div id="service-1-side-id" class="service-1-side">
@@ -1536,6 +1525,9 @@
       <!--                             △△ [Service] Location ----------------------------->
     </div>
     <!--                               △△ [Service] ------------------------------------->
+    <div>
+      <div id="size-monitor">0px x 0px</div>
+    </div>
   </div>
 
 
@@ -1775,11 +1767,12 @@
     #size-monitor {
       position: fixed;
       /* 화면에 고정 */
-      top: 400px;
+      /*top: 400px;*/
+      bottom: 0;
       /* 위에서 10px (바닥에 두려면 bottom: 10px) */
       align-items: center;
       /* 오른쪽에서 10px */
-      z-index: 9999;
+      z-index: 10;
       /* 모든 요소보다 위에 */
 
       background-color: rgba(0, 0, 0, 0.7);
