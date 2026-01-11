@@ -88,7 +88,7 @@
       align-items: center;
       gap: 10px;
       margin: 0px;
-      padding-left: 200px;
+      /*padding-left: 25%;*/
       z-index: 1000;
       height: 50px;
     }
@@ -96,7 +96,8 @@
     .signboard {
       display: flex;
       justify-content: center;
-      width: 520px;
+      /*width: 520px;*/
+      width: auto;
       height: 50px;
       background-color: #fdfdfd;
       z-index: 1000;
@@ -146,8 +147,24 @@
 
     /*                               △△ [Sub Container] [Section-2] Signboard --- */
     /*                               ▽▽ [Sub Container] [Section-2] Phone ------- */
+    /*.phone-button-1 {
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      background-color: #fdfdfd;
+      border-radius: 30px;
+      padding: 1px 7px;
+      transition: all 0.3s;
+      text-decoration: none;
+    }*/
+
     .phone-button-1 {
       z-index: 1000;
+      position: fixed;
+      top: 0;
+      right: 0;
       display: flex;
       align-items: center;
       justify-content: center;
