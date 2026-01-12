@@ -316,10 +316,10 @@
     /*                           ▽▽ [Main Container] [Section-20] --------------- */
     .section-20 {
       order: 0;
-      background-color: #f7f3f3;
+      background-color: #f8f3f3;
       margin: 0px;
       z-index: 1000;
-      height: 130px;
+      height: auto;
       text-align: center;
     }
 
@@ -328,7 +328,7 @@
       border-top: 1px solid #ddd;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0px 20px 20px 20px;
+      padding: 0px 20px 70px 20px;
     }
 
     .card-logo {
@@ -661,22 +661,64 @@
 
     .subContents-1 {
       order: -2;
+      display: flex;
+      justify-content: center;
       background-color: #f8f8f8;
       margin: 5px 0;
       z-index: 1000;
       padding: 10px 10px;
       border: 1px solid #b4aeae;
       border-radius: 10px;
+      height: 200px;
+    }
+
+    .workImage-1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .workImage-1 img {
+      width: auto;
+      height: auto;
+      border-radius: 15px;
+      display: block;
+      animation: cycle-1 1s infinite ease-in-out;
+    }
+
+    @keyframes cycle-1 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(10deg);
+      }
     }
 
     .subContents-2 {
-      order: 0;
+      order: -0;
+      display: flex;
+      justify-content: center;
       background-color: #f8f8f8;
       margin: 5px 0;
       z-index: 1000;
       padding: 10px 10px;
       border: 1px solid #b4aeae;
       border-radius: 10px;
+      height: 200px;
+    }
+
+    .workImage-2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .workImage-2 img {
+      width: auto;
+      height: auto;
+      border-radius: 15px;
+      display: block;
+      animation: cycle-1 1s infinite ease-in-out;
     }
 
     /*                               △△ [Container-1] [Section-1-2] ------------- */
@@ -972,6 +1014,32 @@
     /*                               △△ [Service] Location ----------------------- */
     /*                               △△ [Service] -------------------------------- */
 
+    /*                               ▽▽ [Scroll Top Button] ---------------------- */
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      background-color: #7798bb;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #556b82;
+      transform: translateY(-3px);
+    }
+
+    /*                               △△ [Scroll Top Button] ---------------------- */
+
     /*                               ▽▽ [Media] ---------------------------------- */
     /*                               ▽▽ [Media] [PC Small] ----------------------- */
 
@@ -1102,32 +1170,37 @@
 
       /*                  ▽▽ [Media] [Main Container] [Section-20] --------------- */
       .section-20 {
-        height: 95px;
+        height: auto;
       }
 
       /*                  ▽▽ [Media] [Main Container] [Section-20] Business Crad - */
       .businessCard {
-        padding: 0px 20px 0px 20px;
+        padding: 5px 20px 90px 20px;
       }
 
       .card-logo {
-        gap: 2px;
+        gap: 7px;
         padding-top: 1px;
-        padding-bottom: 0px;
+        padding-bottom: 3px;
+      }
+
+      .card-logo img {
+        height: 25px;
+        opacity: 1;
       }
 
       .company-name {
-        font-size: 10px;
-        margin-bottom: 0px;
+        font-size: 14px;
+        margin-bottom: 3px;
       }
 
       .company-info {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.4;
       }
 
       .copyright {
-        font-size: 10px;
+        font-size: 11px;
       }
 
       /*                  △△ [Media] [Main Container] [Section-20] Business Crad - */
@@ -1290,115 +1363,115 @@
       /*                      △△ [Media] [Container-1] [Section-1] --------------- */
       /*                      ▽▽ [Media] [Container-1] [Section-1-1] ------------- */
       .section-1-1 {
-      order: 0;
-      display: flex;
-      flex-direction: column;
-      background-color: #fdfdfd;
-      margin: 0 auto;
-      z-index: 1000;
-      flex: 1;
-    }
+        order: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fdfdfd;
+        margin: 0 auto;
+        z-index: 1000;
+        flex: 1;
+      }
 
-    /*                               △△ [Container-1] [Section-1-1] ------------- */
-    /*                               ▽▽ [Container-1] [Section-1-2] ------------- */
-    .mainContents {
-      order: -1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0px;
-      background-color: #f8f8f8;
-      z-index: 1000;
-      border-radius: 10px;
-      padding: 20px 0px;
-      margin: 5px auto;
-      border: 1px solid #b4aeae;
-    }
+      /*                               △△ [Container-1] [Section-1-1] ------------- */
+      /*                               ▽▽ [Container-1] [Section-1-2] ------------- */
+      .mainContents {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        background-color: #f8f8f8;
+        z-index: 1000;
+        border-radius: 10px;
+        padding: 20px 0px;
+        margin: 5px auto;
+        border: 1px solid #b4aeae;
+      }
 
-    .intro-img-1 {
-      flex: 0 0 50%;
-      margin: 0px -60px 150px 10px;
-    }
+      .intro-img-1 {
+        flex: 0 0 50%;
+        margin: 0px -60px 150px 10px;
+      }
 
-    .intro-img-1 img {
-      width: 50%;
-      height: auto;
-      border-radius: 15px;
-      display: block;
-    }
+      .intro-img-1 img {
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+        display: block;
+      }
 
-    .txt-2_t-2 {
-      flex: 1;
-      font-family: "HY헤드라인M", sans-serif;
-    }
+      .txt-2_t-2 {
+        flex: 1;
+        font-family: "HY헤드라인M", sans-serif;
+      }
 
-    .txt-2_t-2 p {
-      margin-bottom: -15px;
-    }
+      .txt-2_t-2 p {
+        margin-bottom: -15px;
+      }
 
-    .txt-2_t-2 p:last-child {
-      margin-bottom: 10px;
-    }
+      .txt-2_t-2 p:last-child {
+        margin-bottom: 10px;
+      }
 
-    .txt-2_t-2_p-1 {
-      margin-top: 0;
-      font-size: 15px;
-      font-weight: 600;
-      color: #302d2d;
-    }
+      .txt-2_t-2_p-1 {
+        margin-top: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: #302d2d;
+      }
 
-    .txt-2_t-2_p-2,
-    .txt-2_t-2_p-3 {
-      margin-top: 20px;
-      font-size: 15px;
-      font-weight: 400;
-      color: #3f3c3c;
-    }
+      .txt-2_t-2_p-2,
+      .txt-2_t-2_p-3 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #3f3c3c;
+      }
 
-    .txt-2_t-2_p-4 {
-      margin-top: 30px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #3f3c3c;
-    }
+      .txt-2_t-2_p-4 {
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #3f3c3c;
+      }
 
-    .txt-2_t-2_p-5,
-    .txt-2_t-2_p-6,
-    .txt-2_t-2_p-7 {
-      margin-top: 20px;
-      font-size: 15px;
-      font-weight: 400;
-      color: #3f3c3c;
-    }
+      .txt-2_t-2_p-5,
+      .txt-2_t-2_p-6,
+      .txt-2_t-2_p-7 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #3f3c3c;
+      }
 
-    .txt-2_t-2_p-8 {
-      margin-top: 30px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #3f3c3c;
-    }
+      .txt-2_t-2_p-8 {
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #3f3c3c;
+      }
 
-    .txt-2_t-2_p-9,
-    .txt-2_t-2_p-10 {
-      margin-top: 20px;
-      font-size: 15px;
-      font-weight: 400;
-      color: #3f3c3c;
-    }
+      .txt-2_t-2_p-9,
+      .txt-2_t-2_p-10 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #3f3c3c;
+      }
 
-    .subContents-1 {
-      margin: 5px 0;
-      padding: 10px 10px;
-      border: 1px solid #b4aeae;
-      border-radius: 10px;
-    }
+      .subContents-1 {
+        margin: 5px 0;
+        padding: 10px 10px;
+        border: 1px solid #b4aeae;
+        border-radius: 10px;
+      }
 
-    .subContents-2 {
-      margin: 5px 0;
-      padding: 10px 10px;
-      border: 1px solid #b4aeae;
-      border-radius: 10px;
-    }
+      .subContents-2 {
+        margin: 5px 0;
+        padding: 10px 10px;
+        border: 1px solid #b4aeae;
+        border-radius: 10px;
+      }
 
 
       /*                      △△ [Media] [Container-1] [Section-1-1] ------------- */
@@ -1430,12 +1503,12 @@
 
       /*                               △△ [Media] [Mobile] [Pop-Up] Overlay-3 ----- */
 
-      /*                               ▽▽ [Service] ------------------------------- */
+      /*                               ▽▽ [Media] [Service] ----------------------- */
       .service-1-side {
         padding: 0px 5px;
       }
 
-      /*                               ▽▽ [Service] Hide -------------------------- */
+      /*                               ▽▽ [Media] [Service] Hide ------------------ */
       .service-1-hide {
         height: 40px;
         font-size: 16px;
@@ -1454,8 +1527,8 @@
         font-size: 30px;
       }*/
 
-      /*                               △△ [Service] Hide -------------------------- */
-      /*                               ▽▽ [Service] Expense ----------------------- */
+      /*                               △△ [Media] [Service] Hide ----------------- */
+      /*                               ▽▽ [Media] [Service] Expense -------------- */
       .service-1-left {
         width: 120px;
         height: 40px;
@@ -1464,8 +1537,8 @@
         font-weight: 900;
       }
 
-      /*                               △△ [Service] Expense ----------------------- */
-      /*                               ▽▽ [Service] Location ---------------------- */
+      /*                               △△ [Media] [Service] Expense -------------- */
+      /*                               ▽▽ [Media] [Service] Location ------------- */
       .service-1-right {
         width: 120px;
         height: 40px;
@@ -1484,8 +1557,16 @@
         padding: 10px 0px;
       }
 
-      /*                               △△ [Service] Location ---------------------- */
-      /*                               △△ [Service] ------------------------------- */
+      /*                               △△ [Media] [Service] Location -------------- */
+      /*                               △△ [Media] [Service] ----------------------- */
+
+      /*                               ▽▽ [Media] [Scroll Top Button] ------------- */
+      #scrollTopBtn {
+        bottom: 50px;
+        right: 10px;
+      }
+
+      /*                               △△ [Media] [Scroll Top Button] ------------ */
     }
 
     /*                               △△ [Media] Mobile --------------------------- */
@@ -1501,7 +1582,7 @@
           <header class="headerItem">
             <div class="up">
               <h1 class="text1">
-                <span class="text1-1">학원 소개</span>
+                <span class="text1-1">강사 소개</span>
               </h1>
               <div class="login">
                 <span id="guest-menu" style="display: none;">
@@ -1552,10 +1633,14 @@
             </div>
           </div>
           <div class="subContents-1">
-            subContents-1
+            <div class="workImage-1">
+              <img src="Image_005_hammer-1.png" alt="Notice:Page under construction">
+            </div>
           </div>
           <div class="subContents-2">
-            subContents-2
+            <div class="workImage-2">
+              <img src="Image_005_hammer-1.png" alt="Notice:Page under construction">
+            </div>
           </div>
         </section>
       </div>
@@ -1752,7 +1837,9 @@
       <div id="size-monitor">0px x 0px</div>
     </div>
   </div>
-
+  <!--                               ▽▽ [Scroll Top Button] ------------------------------>
+  <button id="scrollTopBtn">△</button>
+  <!--                               △△ [Scroll Top Button] ------------------------------>
 
 
   <!--                                                         Login State -->
@@ -1984,6 +2071,34 @@
     });
     //                                   △△ [Service] Location ---------------------------
 
+    //                                   ▽▽ [Scroll Top Button] --------------------------
+    //                    1. 버튼 요소 가져오기
+    let mybutton = document.getElementById("scrollTopBtn");
+
+    //                    2. 스크롤 할 때마다 실행되는 함수
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      //                   스크롤을 20px 이상 내리면 버튼을 보여줌 (block)
+      //                   맨 위에 있으면 숨김 (none)
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    //                      3. 버튼 클릭 시 맨 위로 올라가는 함수
+    //                         부드럽게 스르륵 올라가기
+    mybutton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    //                                   △△ [Scroll Top Button] --------------------------
   </script>
 
   <style>
